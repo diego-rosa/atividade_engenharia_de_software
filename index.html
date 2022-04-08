@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <!--
+     Link para o favicon
+    <link  rel = "ícone de atalho"  href = "imagens/favicon.ico"  type = "image / x-icon" >
+    <link  rel = "icon"  href = "imagens/favicon.ico"  type = "image / x-icon" >-->
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bicho de Rua</title>
+    <script type="text/javascript"
+	    src="js/jquery-3.0.0.min.js"></script>
+
+    <!-- chamando o arquivo externo jQuery com efeito da imagem-->
+    <script type="text/javascript" src="js/jquery.cycle.js"></script>
+
+    <script type="text/javascript">
+	 /*criando uma função para animação dos slides*/
+      $(function (){
+      $(".carousel").cycle({
+          timeout: 3000,/*tempo*/
+          prev: '#previous',
+          next: '#next',
+        })//fecha o efeito
+      })//fecha a função
+	 </script>
+  </head>
+  <body>
+    <header>
+     <div class="container">
+       <h1>BICHO DE RUA</h1>
+       <nav>
+           <ul>
+               <li><a href="index.html">HOME</a></li>
+               <li><a href="pag2.html">ADOTE</a></li>
+               <li><a href="pag3.html">AJUDE</a></li>
+               <li><a href="pag4.html">ANIMAL COMUNITARIO</a></li>
+               <li><a href="pag5.html">QUEM SOMOS</a></li>
+               <li><a href="pag6.html">CONTATO</a></li>
+           </ul>
+       </nav>
+     </div>
+   </header>
+
+   <main>
+     <section id="conteudo1">
+       <div>
+          <h2>Procura-se um lar</h2>
+          <p>Sabe aquele amigo que voçê sempre quis ter, ele esta aqui esperando voçê leva-lo para casa.</p>
+          <a href="pag2.html">Saiba mais...</a>
+       </div>
+
+     </section>
+
+     <section id="conteudo2">
+          <h2>Próximos Eventos</h2>
+          <div class="carousel">
+            <div><img src="imagens/feira-de-adocao-1.png" alt=""></div>
+            <div><img src="imagens/feira-de-adocao-2.png" alt=""></div>
+            <div><img src="imagens/feira-de-adocao-3.png" alt=""></div>
+          </div>
+          <div class="controles">
+            <p id="controles">
+            	<a href="#" id="previous">Anterior</a>
+              <a href="#" id="next">Próximo</a>
+            </p>
+          </div>
+     </section>
+   </main>
+   <footer>
+    <p>Copyright 2019 | Desenvolvido por Diego José</p>
+  </footer>
+  </body>
+</html>
