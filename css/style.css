@@ -1,0 +1,589 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #0C718A;
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 17px;
+    color: #000000;
+    min-width: 960px;
+    height: 100%;
+    margin: 0px auto;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: darkslategray;
+}
+
+.container {
+  height: 50%;
+  width: 80%;
+  margin: auto;
+}
+
+.container, main {
+    min-width: 960px;
+    height: 100%;
+    margin: 0px auto;
+}
+
+h1 {
+    width: 35%;
+    margin-top: 3px;
+    font-size: 22px;
+    padding-top: 18px;
+    color: #ffffff;
+    float: left;
+}
+
+nav {
+      width: 65%;
+      height: 100%;
+      float: right;
+}
+
+nav ul {
+      padding: 0px;
+      width: 100%;
+      height: 100%;
+      display: table;
+}
+
+nav ul li {
+      width: 150px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+}
+
+nav ul li a {
+      color: #eeeeee;
+      font-weight: bold;
+      text-decoration: none;
+}
+
+nav ul li:hover {
+    border-bottom: 5px solid red;
+}
+
+  /*------------------------------------------------HOME------------------------------------------------*/
+
+#conteudo1 {
+    height: 650px;
+    width: 100%;
+    background-image: url(../imagens/imagem1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+#conteudo1 div {
+    height: 50%;
+    width: 25%;
+    border-radius: 15%;
+    position: absolute;
+    top: 170px;
+    left: 120px;
+    text-align: justify;
+    padding: 2%;
+}
+
+#conteudo1 h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 2%;
+}
+
+#conteudo1 p {
+    color: #ffffff;
+}
+#conteudo2 {
+    height: 550px;
+    width: 100%;
+    background-color: #2196f3;
+    padding-top: 5%;
+}
+
+#conteudo2  #eventos {
+    height: 60%;
+    width: 80%;
+    margin-top: 10%;
+    margin: auto;
+    background-color: darkgray;
+
+}
+
+#conteudo2 h2 {
+    font-size: 40px;
+    color: #ffffff;
+    padding: 1%;
+}
+
+#conteudo2 p {
+    color: #ffffff;
+}
+
+.carousel {
+ width:400px;
+ height:400px;
+ overflow:hidden;
+ background-color: blue;
+ margin: auto;
+}
+
+.carousel img {
+  width:400px;
+  height:400px;
+}
+
+.controles {
+  text-align:center;
+}
+/*------------------------------------------------PAGINA 2------------------------------------------------*/
+
+#conteudo3 {
+    height: 650px;
+    width: 100%;
+    background-image: url(../imagens/fundo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    filter: sepia(50%)
+}
+#conteudo3 div {
+    height: 40%;
+    width: 40%;
+    border-radius: 10%;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    text-align: justify;
+    padding: 2%;
+}
+
+#conteudo3 h2 {
+    font-size: 40px;
+    text-align: justify;
+    color:orangered;
+    padding-bottom: 2%;   
+}
+
+#conteudo3 p {
+    color: #000000;
+    font-size: 20px;
+}
+
+#conteudo4 {
+    height: 550px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+
+#conteudo4 figure {
+    height: 60%;
+    width: 98%;
+    background-color: cornflowerblue;
+    padding-top: 3%;
+    margin: auto;
+}
+
+#conteudo4 figure img {
+    height: 100%;
+    width: 100%;
+}
+
+#conteudo4 h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 2%;
+
+}
+
+#conteudo4 p {
+    color: #ffffff;
+}
+
+#adocao {
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+}
+
+#adocao article {
+    height: 60%;
+    width: 40%;
+    background-color: #bdbdbd;
+    float: left;
+    margin: 1% 5%;
+    border-radius: 3%;
+}
+
+#adocao article figure {
+    height: 40%;
+    width: 30%;
+    margin: auto;
+}
+
+#adocao article figure img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    margin: auto;
+}
+
+#adocao #adotaveis {
+    height: 1300px;
+    width: 100%;
+    background-color: cornflowerblue;
+    margin-top: 35%;
+}
+
+#adotaveis article {
+    width: 23%;
+    height: 40%;
+    margin: 1% 1% ;
+    float: left;
+}
+
+#adotaveis article figure {
+    width: 90%;
+    height: 50%;   
+}
+#adotaveis article figure img {
+    width: 100%;
+    height: 100%;
+}
+
+#adotaveis p {
+    color: cornflowerblue;
+}
+
+#adocao h3 {
+    text-align: center;
+    color: #ffffff;
+    padding: 2%;
+}
+
+#adocao h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 2%;
+}
+
+#adocao article h3 {
+    color: #eeeeee;
+    text-align: center;
+    margin: 5%;
+}
+
+#adocao article p {
+    color: #eeeeee;
+    text-align: justify;
+    margin: 5%;
+}
+
+#adocao article a {
+    color: #eeeeee;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/*------------------------------------------------PAGINA 3------------------------------------------------*/
+.container2 {
+    height:100%;
+    width: 98%;
+    background-color: #0C718A;
+    margin: auto;
+    padding: 4% 0% 2% 0%;
+}
+
+#conteudo5 {
+    height:300px;
+    width: 100%;
+    background-color: #eeeeee;
+    margin-bottom: 2%;
+}
+
+#conteudo5 figure {
+    height:100%;
+    width: 30%;
+    float: left;
+}
+
+#conteudo5 figure img {
+    height:100%;
+    width: 100%;
+}
+
+#conteudo5 #racao {
+    height:80%;
+    width: 56%;
+    margin: 2%;
+    float: right;
+    border-radius: 5px;
+}
+
+#conteudo5 #racao h3 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+#conteudo5 #racao p {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+#conteudo6 {
+    height:300px;
+    width: 100%;
+    background-color: #eeeeee;
+    margin-bottom: 2%;
+}
+
+#conteudo6 figure {
+    height:100%;
+    width: 30%;
+    float: left;
+}
+
+#conteudo6 figure img {
+    height:100%;
+    width: 100%;
+}
+
+#conteudo6 #vacina {
+    height:80%;
+    width: 56%;
+    margin: 2%;
+    float: right;
+    border-radius: 5px;
+}
+
+#conteudo6 #vacina h3 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+#conteudo6 #vacina p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+#conteudo7 {
+    height:300px;
+    width: 100%;
+    background-color: #eeeeee;
+    margin-bottom: 2%;
+}
+
+#conteudo7 figure {
+    height:100%;
+    width: 30%;
+    float: left;
+}
+
+#conteudo7 figure img {
+    height:100%;
+    width: 100%;
+}
+
+#conteudo7 #castracao {
+    height:80%;
+    width: 56%;
+    margin: 2%;
+    float: right;
+    border-radius: 5px;
+}
+
+#conteudo7 #castracao h3 {
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+}
+
+#conteudo7 #castracao p {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+/*------------------------------------------------PAGINA 4------------------------------------------------*/
+#conteudo8 {
+    height: 600px;
+    width: 100%;
+    background-image: url(../imagens/casacomunitaria.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    filter: sepia(50%);
+    padding-top: 5%;
+}
+
+#conteudo8 .lei {
+    height: 470px;
+    width: 50%;
+    border-radius: 5%;
+    background-color: darkgray;
+    box-shadow: 0px 0px 15px black;
+    opacity: 0.9;
+    left: 120px;
+    margin: auto;
+    text-align: justify;
+    padding: 2%;
+}
+
+#conteudo8 h2 {
+    font-size: 30px;
+    text-align: center;
+    color:orangered;
+    padding-bottom: 2%;
+}
+
+#conteudo8 p {
+    color: orangered;
+    text-align: justify;
+}
+
+
+/*------------------------------------------------PAGINA 5------------------------------------------------*/
+h2 {
+    font-size: 30px;
+    color: #eeeeee;
+    text-align: center;
+    padding: 2%;
+}
+
+#conteudo9 {
+    height: 500px;
+    width: 98%;
+    margin: auto;
+}
+#conteudo9 #primeiro {
+    width: 30%;
+    height: 100%;
+    margin-right: 4%;
+    padding: 0px 5px;
+    float: left;
+    border-radius: 8%;
+    background-color: darkgray;
+    box-shadow: 0px 0px 15px black;
+    opacity: 0.9;
+}
+
+#conteudo9 #segundo {
+    width: 30%;
+    height: 100%;
+    padding: 0px 5px;
+    float: left;
+    border-radius: 8%;
+    background-color: darkgray;
+    box-shadow: 0px 0px 15px black;
+    opacity: 0.9;
+}
+
+#conteudo9 #terceiro {
+    width: 30%;
+    height: 100%;
+    margin-left: 2%;
+    padding: 0px 5px;
+    float: right;
+    border-radius: 8%;
+    background-color: darkgray;
+    box-shadow: 0px 0px 15px black;
+    opacity: 0.9;
+}
+#conteudo9 article h3 {
+    color: #eeeeee;
+    text-align: center;
+    padding-top: 4%;
+}
+
+#conteudo9 article p {
+    color: #eeeeee;
+    text-align: justify;
+    padding-top: 20%;
+}
+
+#parceiros {
+    height: 200px;
+    width: 100%;
+    margin: auto;
+
+}
+#parceiros figure {
+    height: 100%;
+    width: 98%;
+    margin: auto;
+}
+
+#parceiros figure img {
+    height: 90%;
+    width: 16%;
+    padding: 3px;
+    float: left;
+}
+
+
+/*------------------------------------------------PAGINA 6------------------------------------------------*/
+#conteudo10 {
+    height: 600px;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.formulario {
+    height: 490px;
+    width: 50%;
+    background-color: #78909c;
+    margin: auto;
+    border-radius: 3%;
+}
+
+form {
+    height: 100%;
+    width:100%;
+    color: #ffffff;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    width: 50%;
+}
+
+#acoes input {
+    width: 15%;
+}
+
+#acoes .botao {
+    border-radius: 5%;
+    border-color: blue;
+}
+/*------------------------------------------------FOOTER--------------------------------------------------*/
+footer {
+    height: 40px;
+    width: 100%;
+    background-color: #616161;
+    float: left;
+    padding-top: 30px;
+}
+footer p {
+    color: #ffffff;
+    text-align: center;
+}
