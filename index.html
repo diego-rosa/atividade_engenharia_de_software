@@ -5,20 +5,14 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
     <title>Bicho de Rua</title>
-    <script type="text/javascript"
-	    src="js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
 
     <script type="text/javascript" src="js/jquery.cycle.js"></script>
 
     <script type="text/javascript">
 	 
       $(function (){
-      $(".carousel").cycle({
-          timeout: 3000,
-          prev: '#previous',
-          next: '#next',
-        })
-      })
+      $(".carousel").cycle({ timeout: 3000, prev: '#previous', next: '#next', }) })
 	 </script>
   </head>
   <body>
@@ -39,7 +33,7 @@
    </header>
 
    <main>
-     <section id="conteudo1">
+     <section id="caixatexto">
        <div>
           <h2>Procura-se um lar</h2>
           <p>Sabe aquele amigo que voçê sempre quis ter, ele esta aqui esperando voçê leva-lo para casa.</p>
@@ -48,14 +42,14 @@
 
      </section>
 
-     <section id="conteudo2">
+     <section id="conteudocarrosel">
           <h2>Próximos Eventos</h2>
           <div class="carousel">
             <div><img src="imagens/feira-de-adocao-1.png" alt=""></div>
             <div><img src="imagens/feira-de-adocao-2.png" alt=""></div>
             <div><img src="imagens/feira-de-adocao-3.png" alt=""></div>
           </div>
-          <div class="controles">
+          <div class="controlescarrosel">
             <p id="controles">
             	<a href="#" id="previous">Anterior</a>
               <a href="#" id="next">Próximo</a>
