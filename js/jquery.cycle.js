@@ -1,12 +1,4 @@
-/*!
- * jQuery Cycle Plugin (with Transition Definitions)
- * Examples and documentation at: http://jquery.malsup.com/cycle/
- * Copyright (c) 2007-2013 M. Alsup
- * Version: 3.0.3 (11-JUL-2013)
- * Dual licensed under the MIT and GPL licenses.
- * http://jquery.malsup.com/license.html
- * Requires: jQuery v1.7.1 or later
- */
+
 ;(function($, undefined) {
 "use strict";
 
@@ -17,7 +9,6 @@ function debug(s) {
 		log(s);
 }		
 function log() {
-	/*global console */
 	if (window.console && console.log)
 		console.log('[cycle] ' + Array.prototype.join.call(arguments,' '));
 }
@@ -26,20 +17,9 @@ $.expr[':'].paused = function(el) {
 };
 
 
-// the options arg can be...
-//   a number  - indicates an immediate transition should occur to the given slide index
-//   a string  - 'pause', 'resume', 'toggle', 'next', 'prev', 'stop', 'destroy' or the name of a transition effect (ie, 'fade', 'zoom', etc)
-//   an object - properties to control the slideshow
-//
-// the arg2 arg can be...
-//   the name of an fx (only used in conjunction with a numeric value for 'options')
-//   the value true (only used in first arg == 'resume') and indicates
-//	 that the resume should occur immediately (not wait for next timeout)
-
 $.fn.cycle = function(options, arg2) {
 	var o = { s: this.selector, c: this.context };
 
-	// in 1.3+ we can fix mistakes with the ready state
 	if (this.length === 0 && options != 'stop') {
 		if (!$.isReady && o.s) {
 			log('DOM not ready, queuing slideshow');
@@ -48,12 +28,11 @@ $.fn.cycle = function(options, arg2) {
 			});
 			return this;
 		}
-		// is your DOM ready?  http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+		
 		log('terminating; zero elements found by selector' + ($.isReady ? '' : ' (DOM not ready)'));
 		return this;
 	}
 
-	// iterate the matched nodeset
 	return this.each(function() {
 		var opts = handleArguments(this, options, arg2);
 		if (opts === false)
@@ -61,11 +40,10 @@ $.fn.cycle = function(options, arg2) {
 
 		opts.updateActivePagerLink = opts.updateActivePagerLink || $.fn.cycle.updateActivePagerLink;
 		
-		// stop existing slideshow for this container (if there is one)
 		if (this.cycleTimeout)
 			clearTimeout(this.cycleTimeout);
 		this.cycleTimeout = this.cyclePause = 0;
-		this.cycleStop = 0; // issue #108
+		this.cycleStop = 0; 
 
 		var $cont = $(this);
 		var $slides = opts.slideExpr ? $(opts.slideExpr, this) : $cont.children();
@@ -82,7 +60,6 @@ $.fn.cycle = function(options, arg2) {
 
 		var startTime = opts2.continuous ? 10 : getTimeout(els[opts2.currSlide], els[opts2.nextSlide], opts2, !opts2.backwards);
 
-		// if it's an auto slideshow, kick it off
 		if (startTime) {
 			startTime += (opts2.delay || 0);
 			if (startTime < 10)
@@ -104,7 +81,6 @@ function triggerPause(cont, byHover, onPager) {
 		opts.resumed(cont, opts, byHover, onPager);
 }
 
-// process the args that were passed to the plugin fn
 function handleArguments(cont, options, arg2) {
 	if (cont.cycleStop === undefined)
 		cont.cycleStop = 0;
@@ -117,7 +93,7 @@ function handleArguments(cont, options, arg2) {
 			var opts = $(cont).data('cycle.opts');
 			if (!opts)
 				return false;
-			cont.cycleStop++; // callbacks look for change
+			cont.cycleStop++; 
 			if (cont.cycleTimeout)
 				clearTimeout(cont.cycleTimeout);
 			cont.cycleTimeout = 0;
@@ -158,7 +134,6 @@ function handleArguments(cont, options, arg2) {
 		return options;
 	}
 	else if (options.constructor == Number) {
-		// go to the requested slide
 		var num = options;
 		options = $(cont).data('cycle.opts');
 		if (!options) {
@@ -182,7 +157,7 @@ function handleArguments(cont, options, arg2) {
 	return options;
 	
 	function checkInstantResume(isPaused, arg2, cont) {
-		if (!isPaused && arg2 === true) { // resume now!
+		if (!isPaused && arg2 === true) { 
 			var options = $(cont).data('cycle.opts');
 			if (!options) {
 				log('options not found, can not resume');
@@ -200,11 +175,10 @@ function handleArguments(cont, options, arg2) {
 function removeFilter(el, opts) {
 	if (!$.support.opacity && opts.cleartype && el.style.filter) {
 		try { el.style.removeAttribute('filter'); }
-		catch(smother) {} // handle old opera versions
+		catch(smother) {} 
 	}
 }
 
-// unbind event handlers
 function destroy(cont, opts) {
 	if (opts.next)
 		$(opts.next).unbind(opts.prevNextEvent);
@@ -217,14 +191,14 @@ function destroy(cont, opts) {
 		});
 	opts.pagerAnchors = null;
 	$(cont).unbind('mouseenter.cycle mouseleave.cycle');
-	if (opts.destroy) // callback
+	if (opts.destroy) 
 		opts.destroy(opts);
 }
 
-// one-time initialization
+
 function buildOptions($cont, $slides, els, options, o) {
 	var startingSlideSpecified;
-	// support metadata plugin (v1.0 and v2.0)
+	
 	var opts = $.extend({}, $.fn.cycle.defaults, options || {}, $.metadata ? $cont.metadata() : $.meta ? $cont.data() : {});
 	var meta = $.isFunction($cont.data) ? $cont.data(opts.metaAttr) : null;
 	if (meta)
@@ -240,7 +214,6 @@ function buildOptions($cont, $slides, els, options, o) {
 	opts.before = opts.before ? [opts.before] : [];
 	opts.after = opts.after ? [opts.after] : [];
 
-	// push some after callbacks
 	if (!$.support.opacity && opts.cleartype)
 		opts.after.push(function() { removeFilter(this, opts); });
 	if (opts.continuous)
@@ -248,11 +221,10 @@ function buildOptions($cont, $slides, els, options, o) {
 
 	saveOriginalOpts(opts);
 
-	// clearType corrections
 	if (!$.support.opacity && opts.cleartype && !opts.cleartypeNoBg)
 		clearTypeFix($slides);
 
-	// container requires non-static position so that slides can be position within
+	
 	if ($cont.css('position') == 'static')
 		$cont.css('position', 'relative');
 	if (opts.width)
@@ -263,7 +235,7 @@ function buildOptions($cont, $slides, els, options, o) {
 	if (opts.startingSlide !== undefined) {
 		opts.startingSlide = parseInt(opts.startingSlide,10);
 		if (opts.startingSlide >= els.length || opts.startSlide < 0)
-			opts.startingSlide = 0; // catch bogus input
+			opts.startingSlide = 0; 
 		else 
 			startingSlideSpecified = true;
 	}
@@ -272,14 +244,14 @@ function buildOptions($cont, $slides, els, options, o) {
 	else
 		opts.startingSlide = 0;
 
-	// if random, mix up the slide array
+	
 	if (opts.random) {
 		opts.randomMap = [];
 		for (var i = 0; i < els.length; i++)
 			opts.randomMap.push(i);
 		opts.randomMap.sort(function(a,b) {return Math.random() - 0.5;});
 		if (startingSlideSpecified) {
-			// try to find the specified starting slide and if found set start slide index in the map accordingly
+			
 			for ( var cnt = 0; cnt < els.length; cnt++ ) {
 				if ( opts.startingSlide == opts.randomMap[cnt] ) {
 					opts.randomIndex = cnt;

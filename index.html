@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir="ltr">
   <head>
-    <!--
-     Link para o favicon
-    <link  rel = "ícone de atalho"  href = "imagens/favicon.ico"  type = "image / x-icon" >
-    <link  rel = "icon"  href = "imagens/favicon.ico"  type = "image / x-icon" >-->
 
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
@@ -12,23 +8,22 @@
     <script type="text/javascript"
 	    src="js/jquery-3.0.0.min.js"></script>
 
-    <!-- chamando o arquivo externo jQuery com efeito da imagem-->
     <script type="text/javascript" src="js/jquery.cycle.js"></script>
 
     <script type="text/javascript">
-	 /*criando uma função para animação dos slides*/
+	 
       $(function (){
       $(".carousel").cycle({
-          timeout: 3000,/*tempo*/
+          timeout: 3000,
           prev: '#previous',
           next: '#next',
-        })//fecha o efeito
-      })//fecha a função
+        })
+      })
 	 </script>
   </head>
   <body>
     <header>
-     <div class="container">
+     <div class="menu">
        <h1>BICHO DE RUA</h1>
        <nav>
            <ul>
