@@ -18,7 +18,7 @@ header {
     background-color: darkslategray;
 }
 
-.container {
+.menu {
   height: 50%;
   width: 80%;
   margin: auto;
@@ -71,7 +71,7 @@ nav ul li:hover {
 
   /*------------------------------------------------HOME------------------------------------------------*/
 
-#conteudo1 {
+#caixatexto {
     height: 650px;
     width: 100%;
     background-image: url(../imagens/imagem1.jpg);
@@ -79,7 +79,7 @@ nav ul li:hover {
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
-#conteudo1 div {
+#caixatexto div {
     height: 50%;
     width: 25%;
     border-radius: 15%;
@@ -90,24 +90,24 @@ nav ul li:hover {
     padding: 2%;
 }
 
-#conteudo1 h2 {
+#caixatexto h2 {
     font-size: 30px;
     text-align: center;
     color: #ffffff;
     padding-bottom: 2%;
 }
 
-#conteudo1 p {
+#caixatexto p {
     color: #ffffff;
 }
-#conteudo2 {
+#conteudocarrosel {
     height: 550px;
     width: 100%;
     background-color: #2196f3;
     padding-top: 5%;
 }
 
-#conteudo2  #eventos {
+#conteudocarrosel  #eventos {
     height: 60%;
     width: 80%;
     margin-top: 10%;
@@ -116,13 +116,13 @@ nav ul li:hover {
 
 }
 
-#conteudo2 h2 {
+#conteudocarrosel h2 {
     font-size: 40px;
     color: #ffffff;
     padding: 1%;
 }
 
-#conteudo2 p {
+#conteudocarrosel p {
     color: #ffffff;
 }
 
@@ -139,12 +139,12 @@ nav ul li:hover {
   height:400px;
 }
 
-.controles {
+.controlescarrosel {
   text-align:center;
 }
 /*------------------------------------------------PAGINA 2------------------------------------------------*/
 
-#conteudo3 {
+#caixatexto2 {
     height: 650px;
     width: 100%;
     background-image: url(../imagens/fundo2.jpg);
@@ -153,7 +153,7 @@ nav ul li:hover {
     background-attachment: scroll;
     filter: sepia(50%)
 }
-#conteudo3 div {
+#caixatexto2 div {
     height: 40%;
     width: 40%;
     border-radius: 10%;
@@ -164,25 +164,25 @@ nav ul li:hover {
     padding: 2%;
 }
 
-#conteudo3 h2 {
+#caixatexto2 h2 {
     font-size: 40px;
     text-align: justify;
     color:orangered;
     padding-bottom: 2%;   
 }
 
-#conteudo3 p {
+#caixatexto2 p {
     color: #000000;
     font-size: 20px;
 }
 
-#conteudo4 {
+#processoadocao {
     height: 550px;
     width: 100%;
     background-color: cornflowerblue;
 }
 
-#conteudo4 figure {
+#processoadocao figure {
     height: 60%;
     width: 98%;
     background-color: cornflowerblue;
@@ -190,12 +190,12 @@ nav ul li:hover {
     margin: auto;
 }
 
-#conteudo4 figure img {
+#processoadocao figure img {
     height: 100%;
     width: 100%;
 }
 
-#conteudo4 h2 {
+#processoadocao h2 {
     font-size: 30px;
     text-align: center;
     color: #ffffff;
@@ -203,7 +203,7 @@ nav ul li:hover {
 
 }
 
-#conteudo4 p {
+#processoadocao p {
     color: #ffffff;
 }
 
@@ -296,7 +296,7 @@ nav ul li:hover {
 
 
 /*------------------------------------------------PAGINA 3------------------------------------------------*/
-.container2 {
+.container {
     height:100%;
     width: 98%;
     background-color: #0C718A;
@@ -304,25 +304,25 @@ nav ul li:hover {
     padding: 4% 0% 2% 0%;
 }
 
-#conteudo5 {
+#apadrinhamentoderacoes {
     height:300px;
     width: 100%;
     background-color: #eeeeee;
     margin-bottom: 2%;
 }
 
-#conteudo5 figure {
+#apadrinhamentoderacoes figure {
     height:100%;
     width: 30%;
     float: left;
 }
 
-#conteudo5 figure img {
+#apadrinhamentoderacoes figure img {
     height:100%;
     width: 100%;
 }
 
-#conteudo5 #racao {
+#apadrinhamentoderacoes #racao {
     height:80%;
     width: 56%;
     margin: 2%;
@@ -330,38 +330,38 @@ nav ul li:hover {
     border-radius: 5px;
 }
 
-#conteudo5 #racao h3 {
+#apadrinhamentoderacoes #racao h3 {
     text-align: center;
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 35px;
 }
 
-#conteudo5 #racao p {
+#apadrinhamentoderacoes #racao p {
     text-align: justify;
     font-size: 20px;
     padding-top: 10px;
 }
 
-#conteudo6 {
+#apadrinhamentodevacinas {
     height:300px;
     width: 100%;
     background-color: #eeeeee;
     margin-bottom: 2%;
 }
 
-#conteudo6 figure {
+#apadrinhamentodevacinas figure {
     height:100%;
     width: 30%;
     float: left;
 }
 
-#conteudo6 figure img {
+#apadrinhamentodevacinas figure img {
     height:100%;
     width: 100%;
 }
 
-#conteudo6 #vacina {
+#apadrinhamentodevacinas #vacina {
     height:80%;
     width: 56%;
     margin: 2%;
@@ -369,37 +369,37 @@ nav ul li:hover {
     border-radius: 5px;
 }
 
-#conteudo6 #vacina h3 {
+#apadrinhamentodevacinas #vacina h3 {
     text-align: center;
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 35px;
 }
 
-#conteudo6 #vacina p {
+#apadrinhamentodevacinas #vacina p {
     text-align: justify;
     font-size: 20px;
 }
 
-#conteudo7 {
+#apadrinhamentodecastracao {
     height:300px;
     width: 100%;
     background-color: #eeeeee;
     margin-bottom: 2%;
 }
 
-#conteudo7 figure {
+#apadrinhamentodecastracao figure {
     height:100%;
     width: 30%;
     float: left;
 }
 
-#conteudo7 figure img {
+#apadrinhamentodecastracao figure img {
     height:100%;
     width: 100%;
 }
 
-#conteudo7 #castracao {
+#apadrinhamentodecastracao #castracao {
     height:80%;
     width: 56%;
     margin: 2%;
@@ -407,21 +407,21 @@ nav ul li:hover {
     border-radius: 5px;
 }
 
-#conteudo7 #castracao h3 {
+#apadrinhamentodecastracao #castracao h3 {
     text-align: center;
     font-size: 30px;
     padding-top: 10px;
     padding-bottom: 35px;
 }
 
-#conteudo7 #castracao p {
+#apadrinhamentodecastracao #castracao p {
     text-align: justify;
     font-size: 20px;
     padding-top: 10px;
 }
 
 /*------------------------------------------------PAGINA 4------------------------------------------------*/
-#conteudo8 {
+#caixatexto3 {
     height: 600px;
     width: 100%;
     background-image: url(../imagens/casacomunitaria.jpeg);
@@ -430,9 +430,10 @@ nav ul li:hover {
     background-attachment: scroll;
     filter: sepia(50%);
     padding-top: 5%;
+    margin-bottom: 200px;
 }
 
-#conteudo8 .lei {
+#caixatexto3 .lei {
     height: 470px;
     width: 50%;
     border-radius: 5%;
@@ -445,14 +446,14 @@ nav ul li:hover {
     padding: 2%;
 }
 
-#conteudo8 h2 {
+#caixatexto3 h2 {
     font-size: 30px;
     text-align: center;
     color:orangered;
     padding-bottom: 2%;
 }
 
-#conteudo8 p {
+#caixatexto3 p {
     color: orangered;
     text-align: justify;
 }
@@ -466,12 +467,12 @@ h2 {
     padding: 2%;
 }
 
-#conteudo9 {
+#quemsomos {
     height: 500px;
     width: 98%;
     margin: auto;
 }
-#conteudo9 #primeiro {
+#quemsomos #primeiro {
     width: 30%;
     height: 100%;
     margin-right: 4%;
@@ -483,7 +484,7 @@ h2 {
     opacity: 0.9;
 }
 
-#conteudo9 #segundo {
+#quemsomos #segundo {
     width: 30%;
     height: 100%;
     padding: 0px 5px;
@@ -494,7 +495,7 @@ h2 {
     opacity: 0.9;
 }
 
-#conteudo9 #terceiro {
+#quemsomos #terceiro {
     width: 30%;
     height: 100%;
     margin-left: 2%;
@@ -505,13 +506,13 @@ h2 {
     box-shadow: 0px 0px 15px black;
     opacity: 0.9;
 }
-#conteudo9 article h3 {
+#quemsomos article h3 {
     color: #eeeeee;
     text-align: center;
     padding-top: 4%;
 }
 
-#conteudo9 article p {
+#quemsomos article p {
     color: #eeeeee;
     text-align: justify;
     padding-top: 20%;
@@ -538,10 +539,11 @@ h2 {
 
 
 /*------------------------------------------------PAGINA 6------------------------------------------------*/
-#conteudo10 {
+#formulariocontato {
     height: 600px;
     width: 100%;
     padding-top: 5%;
+    margin-bottom: 200px;
 }
 
 .formulario {
